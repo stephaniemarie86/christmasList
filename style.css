@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: rgba(12,140,109,1.00);
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.intro {
+	margin: 30px 0px;
+	font-weight: bold;
+}
+
+h1{
+	font-weight: 800;
+	color:rgba(169,14,16,1.00);
+}
+
+h2{
+	font-weight: 500;
+	color: rgba(52,226,117,1.00);
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+	padding-bottom: 50px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+p {
+	font-weight: 600;
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 20px;
+  background: #eee;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.2s;
+
+
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+ul li.checked {
+  background: #F44336;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.header {
+  background-color: rgba(12,140,109,1.00);
+  padding: 30px 40px 30px 200px;
+  color: white;
+  text-align: center;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px 20px 10px 10px;
+  margin-left: 20px;
+  width: 20px;
+  background: none;
+  color: #FAFAFA;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #F44336;
+}
